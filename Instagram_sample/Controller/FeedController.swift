@@ -41,6 +41,10 @@ class FeedController: UITableViewController {
             // set to creator's image
         }
         headerCell?.usernameButton.setTitle(post.creator, forState: .Normal)
+        
+        let headerView = UIView(frame: headerCell!.frame)
+        headerView.addSubview(headerCell!)
+        
         return headerCell
     }
     
